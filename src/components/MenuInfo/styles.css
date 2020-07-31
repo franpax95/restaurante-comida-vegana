@@ -1,0 +1,49 @@
+.MenuInfo{
+    padding: 10px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.MenuInfo .image{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuInfo .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.MenuInfo .price{
+    padding-right: 100px;
+    width: 100%;
+    color: gray;
+    font-size: 48px;
+    text-align: right;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .MenuInfo .description{
+        min-height: 150px;
+        padding: 10px;
+        overflow: hidden;
+        font-size: 13px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+    .MenuInfo .description{
+        min-height: 200px;
+        padding: 30px 20px;
+        font-size: 17px;
+    }
+}

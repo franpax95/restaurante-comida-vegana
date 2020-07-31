@@ -1,0 +1,81 @@
+.MenuListElement{
+    width: 100%;
+    padding-right: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: none;
+    background: initial;
+
+    transition: background-color .5s;
+}
+
+.MenuListElement:hover{
+    background-color: whitesmoke;
+}
+
+.MenuListElement:not(:last-child){
+    border-bottom: solid 1px darkgray;
+}
+
+.MenuListElement .image{
+    padding: 20px;
+    height: 120px;
+    min-height: 120px;
+    width: 120px;
+    min-width: 120px;
+}
+
+.MenuListElement .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.MenuListElement .info{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuListElement .name{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.MenuListElement .description{
+    width: 100%;
+
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    color: #262626;
+
+    font-size: 13px;
+}
+
+.MenuListElement .price{
+    width: 100%;
+    /* height: 20%; */
+
+    justify-self: flex-end;
+    align-self: flex-end;
+
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .MenuListElement .image{
+        display: none;
+    }
+}

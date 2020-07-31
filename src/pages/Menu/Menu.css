@@ -1,0 +1,35 @@
+.Menu{
+    margin: 100px 0;
+    padding: 0 50px;
+}
+
+.Menu .content{
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .Menu .content > *{
+    position: absolute;
+    top: 0;
+}
+
+.Menu .content > *:nth-child(1){
+    left: 0%;
+    width: 25%;
+}
+
+.Menu .content > *:nth-child(2){
+    left: 25%;
+    width: 25%;
+}
+
+.Menu .content > *:nth-child(3){
+    left: 50%;
+    width: 50%;
+} */

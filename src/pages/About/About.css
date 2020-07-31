@@ -1,0 +1,51 @@
+.About{
+    margin: 10vh 0 20vh 0;
+}
+
+.About .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .content .description{
+    color: #666666;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .About .content{
+        flex-direction: column;
+    }
+
+    .About .content .image-wrapper{
+        width: 90%;
+        height: 300px;
+    }
+
+    .About .content .description{
+        width: 100%;
+        padding: 10vh 10vw;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+    .About .content{
+        flex-direction: row;
+    }
+
+    .About .content .image-wrapper{
+        width: 400px;
+        height: 500px;
+    }
+
+    .About .content .description{
+        width: 50vw;
+        padding: 5vh 5vw;
+        font-size: 17px;
+    }
+}

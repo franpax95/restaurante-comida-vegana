@@ -1,0 +1,28 @@
+.Contact{
+    margin: 10vh 0 20vh 0;
+}
+
+.Contact .content{
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .Contact .content{
+        flex-direction: column;
+    }
+
+    .Contact .content > *{
+        margin-bottom: 70px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+    .Contact .content{
+        flex-direction: row;  
+    }
+}

@@ -1,0 +1,38 @@
+.MenuCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.MenuCard >*{ 
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuCard .image{
+    height: 50%; 
+}
+
+.MenuCard .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.MenuCard .description{
+    height: 30%;
+    color: darkslategray;
+    text-align: center;
+}
+
+.MenuCard .buttons{
+    height: 20%;
+}
