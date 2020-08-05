@@ -20,9 +20,7 @@ const Home = () => {
 
     useEffect(() => {
         for(let i=0; i < 3; i++){
-            const length = menu.length;
-            const index = Math.floor((Math.random() * length));
-
+            const index = Math.floor((Math.random() * menu.length));
             if(i === 0) setFirst(menu[index]);
             if(i === 1) setSecond(menu[index]);
             if(i === 2) setThird(menu[index]);
